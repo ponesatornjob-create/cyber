@@ -1,0 +1,31 @@
+<svg viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Hacker Body (Hoodie) -->
+  <path d="M 120 300 Q 250 250 380 300 L 420 600 L 80 600 Z" 
+        fill="#110000" stroke="#ff0040" stroke-width="4" filter="url(#glow-red)" />
+
+  <!-- Hood Shape -->
+  <path d="M 150 300 C 150 100 350 100 350 300 L 320 320 L 180 320 Z" 
+        fill="#000" stroke="#ff0040" stroke-width="3" filter="url(#glow-red)" />
+  
+  <!-- Mask/Face -->
+  <path d="M 200 200 L 220 250 L 280 250 L 300 200" 
+        fill="none" stroke="#ff0040" stroke-width="2" />
+  
+  <rect x="210" y="210" width="30" height="10" fill="#ff0040" opacity="0.8" />
+  <rect x="260" y="210" width="30" height="10" fill="#ff0040" opacity="0.8" />
+
+  <!-- Glitch Elements -->
+  <rect x="100" y="400" width="300" height="2" fill="#ff0040" opacity="0.5" />
+  <rect x="120" y="420" width="20" height="20" fill="#ff0040" opacity="0.3" />
+  
+  <!-- HUD Elements -->
+  <text x="300" y="550" font-family="monospace" fill="#ff0040" font-size="20">THREAT: CRITICAL</text>
+  <path d="M 400 100 L 450 100 L 450 150" fill="none" stroke="#ff0040" stroke-width="2" />
+</svg>
